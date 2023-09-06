@@ -29,6 +29,7 @@ export default function Signup() {
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (currentUser) navigate("/");
   });
+  //delete this
 
   return (
     <Container>
