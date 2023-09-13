@@ -4,7 +4,8 @@
 
 - Node
 - Axios
--
+- Redux toolkit
+- Firebase
 
 ### Frontend
 
@@ -13,18 +14,15 @@
 - CSS
 - JS
 - styled-components
-- emoji-picker-react
-- react-toastify
 
 ### API's used
 
--
+- TMDB API
 
 ### Concepts learned from this bootcamp:
 
 - React
 - styled-components
-- socket.io
-- Toastify
-- Custom authentication
 - Axios
+- redux toolkit
+- firebase
