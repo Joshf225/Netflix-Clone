@@ -8,7 +8,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 import { RiThumbUpFill, RiThumbDownFill } from "react-icons/ri";
 
-function Card({ movieData, isLiked = false }) {
+export default React.memo(function Card({ movieData, isLiked = false }) {
   // console.log(movieData);
   const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
@@ -73,7 +73,7 @@ function Card({ movieData, isLiked = false }) {
       )}
     </Container>
   );
-}
+});
 
 const Container = styled.div`
   max-width: 230px;
@@ -88,7 +88,7 @@ const Container = styled.div`
     z-index: 10;
   }
   .hover {
-    z-index: 90;
+    z-index: 99;
     height: max-content;
     width: 20rem;
     position: absolute;
@@ -111,7 +111,6 @@ const Container = styled.div`
         position: absolute;
       }
       video {
-        // display: none;
         width: 100%;
         height: 140px;
         object-fit: cover;
@@ -152,5 +151,3 @@ const Container = styled.div`
     }
   }
 `;
-
-export default Card;
